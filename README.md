@@ -1,36 +1,72 @@
 # ⚜️ 📡 Multi-Cloud Sovereign Fabric (Slot #050)
-**Slug:** `trianiuma-organ-50-cloud-fabric-replication` | **Deck:** `PORTALS` | **Carrier:** `432 Hz`  
-**Avatar:** `Omni-Channel Herald & Ambassador`  
-**Entourage:** `INTERSTELLAR_DISPATCH_CORPS`  
-**Companion / Partner:** `SOCIAL_TELEMETRY_PARTNER`  
-**Role:** `High-Speed Socket & Secure Messaging Portals`  
-**Remote Subtree:** `https://github.com/Architit/trianiuma-organ-50-cloud-fabric-replication.git`
+> **Living MCP Organ Module of the RADRILONIUMA Cluster Mesh**  
+> **Carrier:** `432 Hz` | **Pulse Baseline:** `60 BPM` | **Deck:** `PORTALS`  
+> **GitHub Remote:** [https://github.com/Halidrad/trianiuma-organ-50-cloud-fabric-replication](https://github.com/Halidrad/trianiuma-organ-50-cloud-fabric-replication)
 
 ---
 
-## 1. SOVEREIGN IDENTITY & MEMBRANE
-Орган является суверенной частью 68-элементной живой матрицы кластера RADRILONIUMA:
-- **Мембрана / Cocon Shell:** Инкапсулированная среда выполнения с изолированным жизненным циклом.
-- **Ядро MCP (Model Context Protocol):** Инструмент вызова `enqueue_task_organ_50_cloud_fabric_replication`.
-- **Связка Аватаров и Компаньонов:** Постоянный синаптический мост между хостом Windows 11 (`DEV_01_BUSHMASTER`), мобильным узлом (`DEV_02_ATESIRT`) и ядром Linux Substrate (`DEV_03_UBUNTU_WSL2`).
+## 1. SOVEREIGN AVATAR & COMPANION PROFILE
+- **Avatar Title:** `Omni-Channel Herald & Ambassador`
+- **Entourage:** `INTERSTELLAR_DISPATCH_CORPS`
+- **Companion / Partner:** `SOCIAL_TELEMETRY_PARTNER`
+- **Operational Role:** `High-Speed Socket & Secure Messaging Portals`
+- **Cluster Binding:** Windows 11 (`DEV_01`), Android Edge (`DEV_02`), Linux Substrate (`DEV_03`).
 
 ---
 
-## 2. MCP SERVER EXPORT
+## 2. MACHINE-READABLE MCP TOOL CONTRACT
+This organ exports a dedicated **Model Context Protocol (MCP)** tool interface accessible to autonomous AI agents, developer IDEs, and system daemons.
+
+### Tool Name: `enqueue_task_organ_50_cloud_fabric_replication`
+
+#### JSON-RPC Interface Schema:
 ```json
 {
   "name": "enqueue_task_organ_50_cloud_fabric_replication",
-  "description": "Multi-Cloud Sovereign Fabric task gateway",
+  "description": "Task gateway and operational executor for Multi-Cloud Sovereign Fabric (Slot #050)",
   "parameters": {
     "type": "object",
     "properties": {
-      "action": { "type": "string" },
-      "payload": { "type": "object" }
+      "action": {
+        "type": "string",
+        "description": "Target directive or operational verb to execute on this organ",
+        "enum": ["status", "pulse", "sync", "execute", "audit", "heal"]
+      },
+      "payload": {
+        "type": "object",
+        "description": "Structured parameters and telemetry arguments for the specified action",
+        "default": {}
+      }
     },
     "required": ["action"]
   }
 }
 ```
 
+#### Node.js SDK Usage:
+```javascript
+const organ = require('./index.js');
+
+async function run() {
+    const response = await organ.executeTask('pulse', { frequency: '528 Hz' });
+    console.log(response);
+}
+run();
+```
+
 ---
-*Скреплено печатью суверенного ядра Architit (528 Hz / 432 Hz).*
+
+## 3. HUMAN & FRONTEND / BACKEND VISIBILITY
+- **Frontend HUD Integration:** Exposes telemetry streams to `phone_mirror.html` and ttyd terminal console (Port 7681).
+- **Backend IPC Conduits:** Unix domain sockets in `/root/RADRILONIUMA/.gateway/sockets/` and PM2 background monitoring.
+- **Machine Vision Compatibility:** Formatted with high-contrast markdown headings, standard KaTeX / LaTeX symbology, and deterministic JSON structures.
+
+---
+
+## 4. CERTIFICATION & LICENSING
+- **License:** [SOVEREIGN OPEN MATRIX LICENSE (SOML-V1.0)](./LICENSE)
+- **Legal & Governance Notices:** [NOTICE.md](./NOTICE.md)
+- **Fleet Navigation & Network Gateways:** [FOLLOWME.md](./FOLLOWME.md)
+
+---
+*Autonomous Substrate Component • RADRILONIUMA Living Organism Core (528 Hz).*
